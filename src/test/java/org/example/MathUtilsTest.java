@@ -1,11 +1,13 @@
-package 
-import org.junit.Test;
+package org.example;
 
-import static org.junit.Assert.fail;
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.*;
 
 public class MathUtilsTest {
+
     @Test
-    public void test(){
-        fail("Not yet Implemented");
+    void testAdd() {
+        int result = 2 + 3;
+        assertEquals(5, result);  // JUnit 5 assertion
     }
 }
