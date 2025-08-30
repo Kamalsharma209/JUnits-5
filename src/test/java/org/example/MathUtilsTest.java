@@ -20,4 +20,9 @@ public class MathUtilsTest {
         MathUtils mathutils =new MathUtils();
         assertEquals(0,mathutils.AreaOfCircle(0));
     }
+    @Test
+    void circumference(){
+        MathUtils mathutils =new MathUtils();
+        assertEquals(0,mathutils.circumference(0));
+    }
 }
