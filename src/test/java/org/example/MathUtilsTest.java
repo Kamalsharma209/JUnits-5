@@ -21,8 +21,14 @@ public class MathUtilsTest {
         assertEquals(0,mathutils.AreaOfCircle(0));
     }
     @Test
-    void circumference(){
+    void testcircumference(){
         MathUtils mathutils =new MathUtils();
-        assertEquals(0,mathutils.circumference(0));
+        double expected = Math.PI * 2* 7;
+        assertEquals(expected,mathutils.circumference(7));
+    }
+    @Test
+    void testdiv(){
+        MathUtils mathutils =new MathUtils();
+        assertThrows(ArithmeticException.class,() -> mathutils.div(1,0),"Division of 0 ");
     }
 }

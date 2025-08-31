@@ -9,8 +9,12 @@ public class MathUtils {
     }
     public double AreaOfCircle(double r){
         return Math.PI * r *r;
+
     }
     public double circumference(double r){
         return Math.PI * 2* r;
+    }
+    public int div (int a , int b){
+        return a / b;
     }
 }
